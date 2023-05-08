@@ -8,9 +8,10 @@
     <header class="page-header">
       <img class="logo" src="" alt="Логотип Магазина Девайс">
 
-      <form class="search-form">
-        <label class="visually-hidden"><input class="search-form-input" type="text">Текст поиска</label>
-        <label class="visually-hidden"><input class="search-form-input" type="submit">Найти</label>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="seach"></label>
+        <input class="search-form-input" type="text" name="seach" id="seach" placeholder="Текст поиска">
+        <button class="button" type="submit">Найти</button>
       </form>
 
       <nav class="navigation">
@@ -47,7 +48,7 @@
       <h1 class="visually-hidden">Магазин Девайс</h1>
 
       <section class="gallery">
-        <h2 class="gallery-title">Фотогалерея</h2>
+        <h2 class="visually-hidden">Фотогалерея</h2>
 
         <img class="slider-image" src="" alt="Промо-товары" >
         <button class="slider-button slider-prev" type="button">
@@ -56,40 +57,45 @@
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
-        <div class="slider-image-description-container">
-          <h3 class="slider-image-title">Порхает как бабочка, жалит как пчела!</h3>
-          <p class="slider-image-description">
-            Этот обычный, на первый взгляд, квадрокоптер
-            оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a class="slider-image-link" href="#">Подробнее</a>
-          <b class="slider-image-properties-meaning">800 м</b>
-          <span class="slider-image-properties-name">Дальность полета</span>
-          <b class="slider-image-properties-meaning">50 м</b>
-          <span class="slider-image-properties-name">Радиус поражения</span>
-        </div>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-        </ol>
+        <div class="slider-description-container">
+          <h3 class="slider-title">01</h3>
+          <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
+          <p class="slider-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+
+          <a class="button slider-link" href="#">Подробнее</a>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+
+          <p class="slider-properties">
+            <b class="slider-properties-meaning">800 м</b>
+            <span class="slider-properties-name">Дальность полета</span>
+            <b class="slider-properties-meaning">50 м</b>
+            <span class="slider-properties-name">Радиус поражения</span>
+          </p>
+        </div>
       </section>
 
       <section class="catalog">
-        <h2 class="catalog-title visually-hidden">Каталог</h2>
+        <h2 class="visually-hidden">Каталог</h2>
 
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -130,10 +136,10 @@
 
         <ul class="advantages-list">
           <li class="advantages-item">
-            <span class="advantages-item-name">Доставка</span>
+            <button class="button advantages-item-name" type="button">Доставка</button>
             <div>
-              <h3 class="advantages-title">Доставка</h3>
-              <p class="advantages-description">
+              <h3 class="advantages-item-title">Доставка</h3>
+              <p class="advantages-item-description">
                 Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
@@ -141,10 +147,10 @@
             </div>
           </li>
           <li class="advantages-item visually-hidden">
-            <span class="advantages-item-name">Гарантия</span>
+            <button class="button advantages-item-name" type="button">Гарантия</button>
             <div>
-              <h3 class="advantages-title">Гарантия</h3>
-              <p class="advantages-description">
+              <h3 class="advantages-item-title">Гарантия</h3>
+              <p class="advantages-item-description">
                 Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
@@ -152,10 +158,10 @@
             </div>
           </li>
           <li class="advantages-item visually-hidden">
-            <span class="advantages-item-name">Кредит</span>
+            <button class="button advantages-item-name" type="button">Кредит</button>
             <div>
-              <h3 class="advantages-title">Кредит</h3>
-              <p class="advantages-description">
+              <h3 class="advantages-item-title">Кредит</h3>
+              <p class="advantages-item-description">
                 Залезть в долговую яму стало проще! Кредитные
                 консультанты подберут для вас наиболее выгодные
                 условия кредита. Выгодные для банка, разумеется.
@@ -165,8 +171,10 @@
         </ul>
       </section>
 
-      <section class="delivery-clearance">
+      <section class="special-offer">
+        <h2 class="visually-hidden">Специальное предложение</h2>
 
+        <p class="special-offer-text">Доставим редкий товар под заказ</p>
       </section>
 
       <section class="about-company">
@@ -187,7 +195,7 @@
           <li class="transport-company-item">ТоксБерри</li>
         </ul>
 
-        <a class="button button-feedback" href="#">Подробнее о нас</a>
+        <a class="button about-company-link" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -210,16 +218,14 @@
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
 
-        <a class="button button-feedback" href="#">Напишите нам</a>
+        <a class="button contacts-link" href="#">Напишите нам</a>
       </section>
 
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
 
         <p class="subscription-description">
-          Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции,
-          спецпредложения и вот это вот всё.
+          Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
 
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -227,24 +233,25 @@
             Электронная почта
           </label>
           <input type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <button class="subscription-button" type="submit">Подписаться</button>
+          <span>Это бесплатно</span>
         </form>
-
-        <span>Это бесплатно</span>
       </section>
     </main>
 
     <footer class="page-footer">
       <section class="footer-address">
         <img class="logo" src="" alt="Логотип Магазина Девайс">
+
         <h2 class="visually-hidden">Адрес</h2>
+
         <address class="footer-contacts-address">
           <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
 
       <section class="navigation">
-        <h2 class="page-footer-title visually-hidden">Навигация</h2>
+        <h2 class="visually-hidden">Навигация</h2>
 
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -260,21 +267,21 @@
       </section>
 
       <section class="footer-social">
-        <h2 class="page-footer-title visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
@@ -283,6 +290,7 @@
 
       <section class="footer-phone">
         <h2 class="visually-hidden">Телефон</h2>
+
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
