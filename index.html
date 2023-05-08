@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: проект Девайс</title>
   </head>
+
   <body>
     <header class="page-header">
       <img class="logo" src="" alt="Логотип Магазина Девайс">
 
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="seach"></label>
         <input class="search-form-input" type="text" name="seach" id="seach" placeholder="Текст поиска">
         <button class="button" type="submit">Найти</button>
@@ -32,13 +33,13 @@
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="guarantee.html">Гарантия</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="contact.html">Контакты</a>
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -59,12 +60,13 @@
         </button>
 
         <div class="slider-description-container">
-          <h3 class="slider-title">01</h3>
+          <h3 class="visually-hidden">Описание товара</h3>
+
+          <span class="slider-number">01</span>
           <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-
           <a class="button slider-link" href="#">Подробнее</a>
 
           <ol class="slider-pagination">
@@ -255,13 +257,13 @@
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="guarantee.html">Гарантия</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="contact.html">Контакты</a>
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </section>
