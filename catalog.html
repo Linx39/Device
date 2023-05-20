@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: проект Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип Магазина Девайс" src="">
+        <img class="logo page-header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
       </a>
 
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -33,7 +34,7 @@
           </li>
         </ul>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-page">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -181,28 +182,28 @@
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="img/product/product-1.jpg" width="360" height="380"  alt="">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="img/product/product-2.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="img/product/product-3.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-card-price">2500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="img/product/product-4.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
@@ -246,7 +247,7 @@
     <footer class="page-footer">
       <section class="footer-address">
         <a class="navigation-logo" href="index.html">
-          <img class="page-footer-logo" alt="Логотип Магазина Девайс" src="">
+          <img class="logo page-footer-logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс" src="">
         </a>
 
         <h2 class="visually-hidden">Адрес</h2>
@@ -300,7 +301,9 @@
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="htmlacademy-img" src="img/logo-academy.svg" width="115" height="33" alt="Логотип HTML academy">
+        </a>
       </section>
     </footer>
   </body>

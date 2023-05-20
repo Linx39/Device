@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: проект Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
-      <img class="logo" src="" alt="Логотип Магазина Девайс">
+      <img class="logo page-header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
 
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="seach"></label>
@@ -28,7 +29,7 @@
           </li>
         </ul>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-page">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -51,7 +52,7 @@
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
 
-        <img class="slider-image" src="" alt="Промо-товары" >
+        <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Промо-товары" >
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -102,31 +103,37 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-1.svg" width="97" height="55"> -->
               <span class="catalog-name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-2.svg" width="86" height="117"> -->
               <span class="catalog-name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-3.svg" width="71" height="87"> -->
               <span class="catalog-name">Экшн-камеры</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-4.svg" width="107" height="65"> -->
               <span class="catalog-name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-5.svg" width="56" height="98"> -->
               <span class="catalog-name">Умные часы</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
+              <!-- <img class="catalog-img" src="img/catalog-item/catalog-item-6.svg" width="132" height="69"> -->
               <span class="catalog-name">Квадрокоптеры</span>
             </a>
           </li>
@@ -146,6 +153,7 @@
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
+              <!-- <img class="advantages-item-img" src="img/advanages/delivery.svg" width="136" height="164"> -->
             </div>
           </li>
           <li class="advantages-item visually-hidden">
@@ -157,6 +165,7 @@
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
               </p>
+              <!-- <img class="advantages-item-img" src="img/advanages/guarantee.svg" width="171" height="195"> -->
             </div>
           </li>
           <li class="advantages-item visually-hidden">
@@ -168,6 +177,7 @@
                 консультанты подберут для вас наиболее выгодные
                 условия кредита. Выгодные для банка, разумеется.
               </p>
+              <!-- <img class="advantages-item-img" src="img/advanages/credit.svg" width="156" height="188"> -->
             </div>
           </li>
         </ul>
@@ -176,6 +186,7 @@
       <section class="special-offer">
         <h2 class="visually-hidden">Специальное предложение</h2>
 
+        <!-- <img class="special-offer-img" src="img/car.svg" width="47" height="31"> -->
         <p class="special-offer-text">Доставим редкий товар под заказ</p>
       </section>
 
@@ -243,7 +254,7 @@
 
     <footer class="page-footer">
       <section class="footer-address">
-        <img class="logo" src="" alt="Логотип Магазина Девайс">
+        <img class="logo page-footer-logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс">
 
         <h2 class="visually-hidden">Адрес</h2>
 
@@ -296,7 +307,9 @@
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="htmlacademy-img" src="img/logo-academy.svg" width="115" height="33" alt="Логотип HTML academy">
+        </a>
       </section>
     </footer>
   </body>
