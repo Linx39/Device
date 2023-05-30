@@ -8,20 +8,19 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header-container">
+      <div class="header-container">
         <a class="navigation-logo" href="index.html">
-          <img class="logo page-header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
+          <img class="logo header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
         </a>
+
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="seach"></label>
+          <input class="search-form-input" type="text" name="seach" id="seach" placeholder="Текст поиска">
+          <button class="search-form-button" type="submit">Найти</button>
+        </form>
 
         <nav class="navigation">
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="seach"></label>
-                <input class="search-form-input" type="text" name="seach" id="seach" placeholder="Текст поиска">
-                <button class="search-form-button" type="submit">Найти</button>
-              </form>
-            </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Коля Петухов</a>
             </li>
@@ -36,7 +35,7 @@
             </li>
           </ul>
 
-          <ul class="navigation-list navigation-page">
+          <ul class="navigation-list navigation-site">
             <li class="navigation-item">
               <a class="button navigation-link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -74,7 +73,7 @@
       </div>
 
       <div class="products-container">
-        <div class="page-container inner-columns">
+        <div class="page-container products-columns">
           <section class="products-filter">
             <h2 class="visually-hidden" hidden>Фильтры товаров</h2>
 
@@ -261,10 +260,10 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-container page-footer-container">
+      <div class="page-container footer-columns">
         <section class="footer-contacts-address">
           <a class="navigation-logo" href="index.html">
-            <img class="logo page-footer-logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс" src="">
+            <img class="logo logo-footer" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс" src="">
           </a>
 
           <h2 class="visually-hidden" hidden>Адрес</h2>
@@ -274,11 +273,11 @@
           </address>
         </section>
 
-        <div class="footer-navigation-social-container">
+        <div class="footer-center-column">
           <section class="footer-navigation">
             <h2 class="visually-hidden" hidden>Навигация</h2>
 
-            <ul class="navigation-list">
+            <ul class="navigation-list navigation-site">
               <li class="navigation-item">
                 <a class="button button-dark" href="#">Доставка</a>
               </li>
