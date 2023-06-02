@@ -9,39 +9,42 @@
   <body>
     <header class="page-header">
       <div class="header-container">
-        <img class="logo logo-header" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
-
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="visually-hidden" for="search"></label>
-          <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
-          <button class="search-form-button" type="submit">Найти</button>
-        </form>
+        <a class="navigation-logo" href="#">
+          <img class="logo header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
+        </a>
 
         <nav class="header-navigation">
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="search"></label>
+                <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
+                <button class="search-form-button" type="submit">Найти</button>
+              </form>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Войти</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
             </li>
           </ul>
 
-          <ul class="navigation-list navigation-site">
-            <li class="navigation-item">
-              <a class="button" href="catalog.html">Каталог товаров</a>
+          <ul class="navigation-site">
+            <li class="navigation-site-item">
+              <a class="button navigation-site-link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="navigation-item">
-              <a class="button" href="#">Доставка</a>
+            <li class="navigation-site-item">
+              <a class="button navigation-site-link" href="#">Доставка</a>
             </li>
-            <li class="navigation-item">
-              <a class="button" href="#">Гарантия</a>
+            <li class="navigation-site-item">
+              <a class="button navigation-site-link" href="#">Гарантия</a>
             </li>
-            <li class="navigation-item">
-              <a class="button" href="#">Контакты</a>
+            <li class="navigation-site-item">
+              <a class="button navigation-site-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -49,17 +52,17 @@
     </header>
 
     <main class="main-container main-index">
-      <h1 class="page-container visually-hidden" hidden>Магазин Девайс</h1>
+      <h1 class="page-container visually-hidden">Магазин Девайс</h1>
 
       <section class="gallery page-container">
-        <h2 class="visually-hidden" hidden>Фотогалерея</h2>
+        <h2 class="visually-hidden">Фотогалерея</h2>
 
         <div class="gallery-image">
           <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Промо-товары" >
-          <button class="slider-button slider-prev" type="button">
+          <button class="slider-button slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <button class="slider-button slider-next" type="button">
+          <button class="slider-button slider-button-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
@@ -72,37 +75,44 @@
           <p class="slider-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="button slider-link" href="#">Подробнее</a>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-active" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
+          <div class="slider-navigation">
+            <a class="button slider-link" href="#">Подробнее</a>
 
-          <p class="slider-properties">
-            <b class="slider-properties-meaning">800 м</b>
-            <span class="slider-properties-name">Дальность полета</span>
-            <b class="slider-properties-meaning">50 м</b>
-            <span class="slider-properties-name">Радиус поражения</span>
-          </p>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-active" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+
+          <ul class="slider-properties-list">
+            <li class="slider-properties-item">
+              <b class="slider-properties-meaning">800 м</b>
+              <span class="slider-properties-name">Дальность полета</span>
+            </li>
+            <li class="slider-properties-item">
+              <b class="slider-properties-meaning">50 м</b>
+              <span class="slider-properties-name">Радиус поражения</span>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="catalog-index page-container">
-        <h2 class="visually-hidden" hidden>Каталог</h2>
+        <h2 class="visually-hidden">Каталог</h2>
 
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -146,7 +156,7 @@
 
       <section class="advantages">
         <div class="page-container">
-          <h2 class="visually-hidden" hidden>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
 
           <div class="advantages-columns">
             <ul class="advantages-list">
@@ -195,7 +205,7 @@
       </section>
 
       <section class="special-offer page-container">
-        <h2 class="visually-hidden" hidden>Специальное предложение</h2>
+        <h2 class="visually-hidden">Специальное предложение</h2>
 
         <!-- <img class="special-offer-img" src="img/car.svg" width="47" height="31"> -->
         <p class="special-offer-text">Доставим редкий товар под заказ</p>
@@ -249,7 +259,7 @@
 
       <section class="subscription">
         <div class="page-container">
-          <h2 class="visually-hidden" hidden>Подписка на рассылку</h2>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
 
           <div class="subscription-columns">
             <h3 class="subscription-subtitle">Подпишитесь на рассылку</h2>
@@ -260,7 +270,7 @@
           </div>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="appointment-email" hidden>
+            <label class="visually-hidden" for="appointment-email">
               Электронная почта
             </label>
             <input class="subscription-input" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
@@ -276,7 +286,7 @@
         <section class="footer-contacts-address">
           <img class="logo logo-footer" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс">
 
-          <h2 class="visually-hidden" hidden>Адрес</h2>
+          <h2 class="visually-hidden">Адрес</h2>
 
           <address class="footer-address">
             <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -285,9 +295,9 @@
 
         <div class="footer-center-column">
           <section class="footer-navigation">
-            <h2 class="visually-hidden" hidden>Навигация</h2>
+            <h2 class="visually-hidden">Навигация</h2>
 
-            <ul class="navigation-list navigation-site">
+            <ul class="navigation-site">
               <li class="navigation-item">
                 <a class="button button-dark" href="#">Доставка</a>
               </li>
@@ -301,9 +311,9 @@
           </section>
 
           <section class="footer-social">
-            <h2 class="visually-hidden" hidden>Социальные сети</h2>
+            <h2 class="visually-hidden">Социальные сети</h2>
 
-            <ul class="navigation-list footer-social-list">
+            <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
@@ -324,7 +334,7 @@
         </div>
 
         <section class="footer-contacts-phone">
-          <h2 class="visually-hidden" hidden>Телефон</h2>
+          <h2 class="visually-hidden">Телефон</h2>
 
           <address class="footer-address">
             <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
