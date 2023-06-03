@@ -748,9 +748,13 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 44px;
 }
 
 .products-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -780,8 +784,9 @@ body {
 
 .show-more-button {
   width: 760px;
-  height: 55px;
-  margin: 0 auto;
+  margin-bottom: 44px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   background-color: #FFFFFF;
   font-size: 16px;
   line-height: 19px;
@@ -790,8 +795,8 @@ body {
 
 .pagination {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 71px;
   color: #000000;
   background-color: #F0F0F0;
   margin: 0;
@@ -799,16 +804,31 @@ body {
   list-style-type: none;
 }
 
-.pagination-item {
-
-}
-
 .pagination-prev,
 .pagination-next {
+  display: block;
+  box-sizing: border-box;
   width: 128px;
+  padding: 25px;
 }
 
-.pagination-link {
+.number-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.number-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #444444;
   font-size: 16px;
   line-height: 20px;
