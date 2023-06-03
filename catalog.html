@@ -8,8 +8,8 @@
 
   <body>
     <header class="page-header">
-      <div class="header-container">
-        <a class="navigation-logo" href="index.html">
+      <div class="header-container header-container-inner">
+        <a class="logo-link" href="index.html">
           <img class="logo header-logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
         </a>
 
@@ -36,7 +36,7 @@
             </li>
           </ul>
 
-          <ul class="navigation-site">
+          <ul class="navigation-site-list navigation-site-header">
             <li class="navigation-site-item">
               <a class="button navigation-site-link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -56,7 +56,7 @@
 
     <main class="main-container main-inner">
       <div class="page-container">
-        <header class="inner-header">
+        <header class="main-inner-header">
           <h1 class="inner-header-title">Моноподы для селфи</h1>
 
           <ul class="breadcrumbs">
@@ -172,6 +172,7 @@
 
             <div class="sorting-container">
               <h3 class="products-sort-title">Сортировка</h3>
+
               <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
 
@@ -184,12 +185,14 @@
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
 
-              <a class="button-sort-up" href="#">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="button-sort-down" href="#">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <div class="buttons-sort">
+                <a class="button-sort sort-up" href="#">
+                  <span class="visually-hidden">Сортировать по возрастанию</span>
+                </a>
+                <a class="button-sort sort-down" href="#">
+                  <span class="visually-hidden">Сортировать по убыванию</span>
+                </a>
+              </div>
             </div>
 
             <div class="products-list-container">
@@ -263,7 +266,7 @@
     <footer class="page-footer">
       <div class="page-container footer-columns">
         <section class="footer-contacts-address">
-          <a class="navigation-logo" href="index.html">
+          <a class="logo-link" href="index.html">
             <img class="logo logo-footer" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс" src="">
           </a>
 
@@ -278,15 +281,15 @@
           <section class="footer-navigation">
             <h2 class="visually-hidden">Навигация</h2>
 
-            <ul class="navigation-site">
-              <li class="navigation-item">
-                <a class="button button-dark" href="#">Доставка</a>
+            <ul class="navigation-site-list navigation-site-footer">
+              <li class="navigation-site-item">
+                <a class="button button-dark navigation-site-link" href="#">Доставка</a>
               </li>
-              <li class="navigation-item">
-                <a class="button button-dark" href="#">Гарантия</a>
+              <li class="navigation-site-item">
+                <a class="button button-dark navigation-site-link" href="#">Гарантия</a>
               </li>
-              <li class="navigation-item">
-                <a class="button button-dark" href="#">Контакты</a>
+              <li class="navigation-site-item">
+                <a class="button button-dark navigation-site-link" href="#">Контакты</a>
               </li>
             </ul>
           </section>
