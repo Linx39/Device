@@ -73,9 +73,11 @@
         </header>
       </div>
 
-      <div class="products-container">
-        <div class="page-container products-columns">
-          <section class="products-filter">
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+
+        <div class="page-container catalog-columns">
+          <div class="products-filter">
             <h2 class="visually-hidden">Фильтры товаров</h2>
 
             <h3 class="products-filter-title">Фильтр:</h3>
@@ -165,11 +167,9 @@
 
               <button class="button products-filter-button" type="submit">Показать</button>
             </form>
-          </section>
+          </div>
 
-          <section class="products-catalog">
-            <h2 class="visually-hidden">Каталог товаров</h2>
-
+          <div class="catalog-right-column">
             <div class="sorting-container">
               <h3 class="products-sort-title">Сортировка</h3>
 
@@ -195,7 +195,7 @@
               </div>
             </div>
 
-            <div class="products-list-container">
+            <div class="products">
               <ul class="products-list">
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -234,21 +234,21 @@
                   <span class="pagination-link-text">Назад</span>
                 </a>
 
-                <ul class="number-list">
-                  <li class="number-item">
-                    <a class="number-link" href="#">1</a>
+                <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">1</a>
                   </li>
-                  <li class="number-item">
-                    <a class="number-link" href="#">2</a>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
                   </li>
-                  <li class="number-item">
-                    <a class="number-link" href="#">3</a>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
                   </li>
-                  <li class="number-item">
-                    <a class="number-link" href="#">...</a>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
                   </li>
-                  <li class="number-item">
-                    <a class="number-link" href="#">15</a>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
                   </li>
                 </ul>
 
@@ -257,9 +257,9 @@
                 </a>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
 
     </main>
 
