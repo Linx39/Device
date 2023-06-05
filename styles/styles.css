@@ -98,29 +98,22 @@ body {
   background-color: #FFE17F;
 }
 
-.navigation-user {
+.navigation-row-top {
   display: flex;
   align-items: center;
-  margin: 0;
   margin-bottom: 30px;
-  padding: 0;
-  list-style-type: none;
 }
 
-.navigation-user-item:nth-last-child(2) {
-  margin-left: auto;
-}
-
-.navigation-user-link {
-  display: block;
-  padding: 5px 0 5px 27px;
-  color: #000000;
-  background-color: #FFE17F;
-  text-decoration: none;
+.search-form {
+  display: flex;
+  margin-right: 25px;
 }
 
 .search-form-input {
-  width: 359px;
+  width: 308px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 48px;
   color: #000000;
   background-color: #FFE17F;
   font-size: 16px;
@@ -128,7 +121,7 @@ body {
 }
 
 .search-form-button {
-  width: 160px;
+  padding: 10px 55px;
   color: #000000;
   background-color: #FFE17F;
   font-size: 16px;
@@ -136,27 +129,60 @@ body {
   text-align: center;
 }
 
-.navigation-site-list {
+.navigation-list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.navigation-site-header .navigation-site-item {
+.navigation-link {
   display: block;
+  padding: 5px 0 5px 27px;
+  color: #000000;
+  background-color: #FFE17F;
+  text-decoration: none;
 }
 
-.navigation-site-header .navigation-site-item:not(:last-child):not(:first-child) {
-  width: 172px;
-}
-
-.navigation-site-header .navigation-site-item:first-child {
+.navigation-login {
+  min-width: 231px;
   margin-right: auto;
 }
 
+.navigation-buy {
+  min-width: 241px;
+  margin-left: auto;
+}
+
+.navigation-row-bottom {
+  display: flex;
+}
+
+.navigation-site-catalog-link {
+  margin-right: auto;
+}
+
+.navigation-site {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-site-header .navigation-site-item:not(:nth-child(3n)) {
+  width: 172px;
+}
+
+/* .navigation-site-header .navigation-site-item:first-child {
+  margin-right: auto;
+} */
+
 .navigation-site-link {
-  display: inline-block;
+  display: block;
   padding: 15px 0;
 }
 
@@ -761,6 +787,9 @@ body {
 
 .product-card-image {
   background-color: #F0F0F0;
+  width: 360px;
+  height: 380px;
+  margin-bottom: 32px;
 }
 
 .product-card-link {
@@ -768,7 +797,15 @@ body {
   text-decoration: none;
 }
 
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
 .product-card-title {
+  width: 230px;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;

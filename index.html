@@ -11,45 +11,50 @@
       <div class="header-container">
         <img class="logo logo-header" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
 
-        <nav class="header-navigation">
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="search"></label>
-                <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
-                <button class="search-form-button" type="submit">Найти</button>
-              </form>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Корзина</a>
-            </li>
-          </ul>
+        <nav class="navigation">
+          <div class="navigation-row-top">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="search"></label>
+              <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
+              <button class="search-form-button" type="submit">Найти</button>
+            </form>
 
-          <ul class="navigation-site-list navigation-site-header">
-            <li class="navigation-site-item">
-              <a class="button navigation-site-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation-site-item">
-              <a class="button navigation-site-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-site-item">
-              <a class="button navigation-site-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-site-item">
-              <a class="button navigation-site-link" href="#">Контакты</a>
-            </li>
-          </ul>
+            <ul class="navigation-list navigation-login">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Войти</a>
+              </li>
+            </ul>
+
+            <ul class="navigation-list navigation-buy">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation-row-bottom">
+            <a class="button navigation-site-link navigation-site-catalog-link" href="catalog.html">Каталог товаров</a>
+
+            <ul class="navigation-site navigation-site-header">
+              <li class="navigation-site-item">
+                <a class="button navigation-site-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-site-item">
+                <a class="button navigation-site-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-site-item">
+                <a class="button navigation-site-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main class="main-container main-index">
+    <main class="main-container">
       <h1 class="page-container visually-hidden">Магазин Девайс</h1>
 
       <section class="gallery page-container">
@@ -295,7 +300,7 @@
           <section class="footer-navigation">
             <h2 class="visually-hidden">Навигация</h2>
 
-            <ul class="navigation-site-list navigation-site-footer">
+            <ul class="navigation-site navigation-site-footer">
               <li class="navigation-site-item">
                 <a class="button button-dark navigation-site-link" href="#">Доставка</a>
               </li>
