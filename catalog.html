@@ -15,12 +15,14 @@
 
         <nav class="navigation">
           <div class="navigation-row-top">
+            <h2 class="visually-hidden">Форма поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="search"></label>
               <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
               <button class="search-form-button" type="submit">Найти</button>
             </form>
 
+            <h2 class="visually-hidden">Вход на сайт</h2>
             <ul class="navigation-list navigation-login">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Войти</a>
@@ -30,6 +32,7 @@
               </li>
             </ul>
 
+            <h2 class="visually-hidden">Выбранные товары</h2>
             <ul class="navigation-list navigation-buy">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Сравнить</a>
@@ -41,6 +44,7 @@
           </div>
 
           <div class="navigation-row-bottom">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
             <a class="button navigation-site-link navigation-site-catalog-link" href="catalog.html">Каталог товаров</a>
 
             <ul class="navigation-site navigation-site-header">
@@ -79,13 +83,12 @@
       </div>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden">Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров с фильтрами и сортировкой</h2>
 
         <div class="page-container catalog-columns">
           <div class="products-filter">
-            <h2 class="visually-hidden">Фильтры товаров</h2>
-
             <h3 class="products-filter-title">Фильтр:</h3>
+
             <form class="products-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="products-filter-group">
                 <legend class="products-filter-name">Стоимость</legend>
@@ -170,7 +173,7 @@
                 </ul>
               </fieldset>
 
-              <button class="button products-filter-button" type="submit">Показать</button>
+              <button class="button button-color products-filter-button" type="submit">Показать</button>
             </form>
           </div>
 
@@ -190,17 +193,18 @@
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
 
-              <div class="buttons-sort">
-                <a class="button-sort sort-up" href="#">
+              <div class="sort-buttons">
+                <a class="sort-button sort-up" href="#">
                   <span class="visually-hidden">Сортировать по возрастанию</span>
                 </a>
-                <a class="button-sort sort-down" href="#">
+                <a class="sort-button sort-down" href="#">
                   <span class="visually-hidden">Сортировать по убыванию</span>
                 </a>
               </div>
             </div>
 
             <div class="products">
+              <h3 class="visually-hidden">Список товаров</h3>
               <ul class="products-list">
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -208,7 +212,7 @@
                   </a>
                   <div class="product-description">
                     <a class="product-card-link" href="#">
-                      <h3 class="product-card-title">Любительская селфи-палка</h3>
+                      <h4 class="product-card-title">Любительская селфи-палка</h4>
                     </a>
                     <b class="product-card-price">500 ₽</b>
                   </div>
@@ -220,7 +224,7 @@
                   </a>
                   <div class="product-description">
                     <a class="product-card-link" href="#">
-                      <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                      <h4 class="product-card-title">Профессиональная селфи-палка</h4>
                     </a>
                     <b class="product-card-price">1500 ₽</b>
                   </div>
@@ -232,7 +236,7 @@
                   </a>
                   <div class="product-description">
                     <a class="product-card-link" href="#">
-                      <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                      <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
                     </a>
                     <b class="product-card-price">2500 ₽</b>
                   </div>
@@ -244,7 +248,7 @@
                   </a>
                   <div class="product-description">
                     <a class="product-card-link" href="#">
-                      <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                      <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
                     </a>
                     <b class="product-card-price">1500 ₽</b>
                   </div>
@@ -254,7 +258,7 @@
               <button class="button show-more-button" type="button">Загрузить ещё</button>
 
               <div class="pagination">
-                <a class="button button-light pagination-prev" href="#">
+                <a class="button pagination-prev" href="#">
                   <span class="pagination-link-text">Назад</span>
                 </a>
 
@@ -276,7 +280,7 @@
                   </li>
                 </ul>
 
-                <a class="button button-light pagination-next" href="#">
+                <a class="button pagination-next" href="#">
                   <span class="pagination-link-text">Вперёд</span>
                 </a>
               </div>
@@ -291,7 +295,7 @@
       <div class="page-container footer-columns">
         <section class="footer-contacts-address">
           <a class="logo-link" href="index.html">
-            <img class="logo logo-footer" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс" src="">
+            <img class="logo logo-footer" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс">
           </a>
 
           <h2 class="visually-hidden">Адрес</h2>
@@ -303,17 +307,17 @@
 
         <div class="footer-center-column">
           <section class="footer-navigation">
-            <h2 class="visually-hidden">Навигация</h2>
+            <h2 class="visually-hidden">Навигация по сайту</h2>
 
             <ul class="navigation-site navigation-site-footer">
               <li class="navigation-site-item">
-                <a class="button button-dark navigation-site-link" href="#">Доставка</a>
+                <a class="button navigation-site-link" href="#">Доставка</a>
               </li>
               <li class="navigation-site-item">
-                <a class="button button-dark navigation-site-link" href="#">Гарантия</a>
+                <a class="button navigation-site-link" href="#">Гарантия</a>
               </li>
               <li class="navigation-site-item">
-                <a class="button button-dark navigation-site-link" href="#">Контакты</a>
+                <a class="button navigation-site-link" href="#">Контакты</a>
               </li>
             </ul>
           </section>
