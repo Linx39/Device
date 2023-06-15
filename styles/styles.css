@@ -48,7 +48,8 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -59,6 +60,7 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 .button-color {
@@ -176,7 +178,8 @@ body {
   width: 172px;
 }
 
-.navigation-site-link {
+.navigation-site-link,
+.navigation-site-catalog-link {
   display: inline-block;
   padding: 15px 0;
   color: inherit;
@@ -390,18 +393,42 @@ body {
   list-style-type: none;
 }
 
-.catalog-link {
+.catalog-item {
   display: grid;
-  grid-template-rows: auto 60px;
+  /* grid-template-rows: auto 60px; */
   gap: 33px;
-  text-decoration: none;
 }
 
-.catalog-img {
-  display: block;
+.catalog-icon-link {
+  position: relative;
   width: 160px;
   height: 160px;
   background-color:#FFE17F ;
+}
+
+.catalog-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #363636;
+}
+
+.catalog-subtitle-link {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+/* .catalog-link {
+  text-decoration: none;
 }
 
 .catalog-subtitle {
@@ -412,7 +439,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
-}
+} */
 
   /* Advantages */
 .advantages {
@@ -472,29 +499,27 @@ body {
 
   /* Special-offer */
 .special-offer {
-  display: flex;
-  align-items: center;
   background-color: #F0F0F0;
   margin-bottom: 70px;
 }
 
-.special-offer-text {
-  width: 910px;
-  padding-left: 125px;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
+.special-offer-button {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 1160px;
 }
 
-.special-offer-buton {
+.special-offer-text {
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.special-offer-img {
   width: 125px;
   height: 100px;
+  background-color: #FFE17F;
 }
 
   /* About-company Contacts */
@@ -600,6 +625,7 @@ body {
 .subscription-subtitle {
   width: 348px;
   margin: 0;
+  padding-left: 7px;
   padding-top: 64px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -623,6 +649,7 @@ body {
   width: 557px;
   height: 52px;
   padding: 0;
+  padding-left: 17px;
   border: none;
   border-bottom: 3px solid #C4C4C4;
   font-size: 18px;
@@ -636,7 +663,6 @@ body {
   height: 55px;
   border: 3px solid #CECECE;
   margin-right: auto;
-  padding: 0;
 }
 
 /* Header-inner */
