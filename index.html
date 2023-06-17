@@ -12,7 +12,7 @@
         <img class="logo logo-header" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
 
         <nav class="navigation">
-          <div class="navigation-row-top">
+          <div class="navigation-container">
             <h2 class="visually-hidden">Форма поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="search"></label>
@@ -48,7 +48,7 @@
             </ul>
           </div>
 
-          <div class="navigation-row-bottom">
+          <div class="navigation-container">
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <button class="button catalog-navigation-button" href="catalog.html">
               <svg class="catalog-navigation-icon" aria-hidden="true" focusable="false" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".3" cx="25" cy="25.78" r="24" stroke="#000" stroke-width="2"/><g opacity=".3" clip-path="url(#a)"><path d="M33 24.78h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.78)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
@@ -72,7 +72,7 @@
     </header>
 
     <main class="main-container">
-      <h1 class="page-container visually-hidden">Магазин Девайс</h1>
+      <h1 class="visually-hidden">Магазин Девайс</h1>
 
       <section class="gallery page-container">
         <h2 class="visually-hidden">Фотогалерея</h2>
@@ -97,11 +97,11 @@
           </p>
 
           <div class="slider-navigation">
-            <a class="button button-color slider-link" href="#">Подробнее</a>
+            <a class="button-bright slider-navigation-button" href="#">Подробнее</a>
 
             <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-active" type="button">
+              <li class="slider-pagination-item slider-pagination-item-active">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">1 фото</span>
                 </button>
               </li>
@@ -180,30 +180,28 @@
         <div class="page-container advantages-columns">
           <h2 class="visually-hidden">Преимущества</h2>
 
-          <!-- <div class="advantages-columns"> -->
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <button class="button button-color advantages-item-button advantages-item-button-active" type="button">Доставка</button>
-              </li>
-              <li class="advantages-item">
-                <button class="button button-color advantages-item-button" type="button">Гарантия</button>
-              </li>
-              <li class="advantages-item">
-                <button class="button advantages-item-button" type="button">Кредит</button>
-              </li>
-            </ul>
+          <ul class="advantages-list">
+            <li class="advantages-item advantages-item-active">
+              <button class="button-bright advantages-item-button" type="button">Доставка</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button-bright advantages-item-button" type="button">Гарантия</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button-bright advantages-item-button" type="button">Кредит</button>
+            </li>
+          </ul>
 
-            <div class="advantages-description">
-              <h3 class="advantages-item-title">Доставка</h3>
-              <p class="advantages-item-description">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </div>
-          <!-- </div> -->
+          <div class="advantages-description">
+            <h3 class="advantages-item-title">Доставка</h3>
+            <p class="advantages-item-description">
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
 
-          <!-- <div>
+          <!-- <div class="advantages-description">
             <h3 class="advantages-item-title">Гарантия</h3>
             <p class="advantages-item-description">
               Если из-за возгорания купленного у нас товара у вас
@@ -212,7 +210,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="advantages-description">
             <h3 class="advantages-item-title">Кредит</h3>
             <p class="advantages-item-description">
               Залезть в долговую яму стало проще! Кредитные
@@ -227,9 +225,13 @@
         <h2 class="visually-hidden">Специальное предложение</h2>
 
         <button class="button special-offer-button">
-          <img class="special-offer-img" src="img/car.svg" width="47" height="31">
+          <div class="icon-container-left">
+            <svg class="special-offer-icon" aria-hidden="true" focusable="false" width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" fill="#000"/><path d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" fill="#000"/></svg>
+          </div>
           <span class="special-offer-text">Доставим редкий товар под заказ</span>
-          <img class="special-offer-img" src="img/info.svg" width="47" height="31">
+          <div class="icon-container-right">
+            <svg class="special-offer-icon" aria-hidden="true" focusable="false" width="41" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity=".5"/><g opacity=".3" clip-path="url(#a)" fill="#000"><path d="M21 14h-2v2h2v-2ZM21 18h-2v8h2v-8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(19 14)" d="M0 0h2v12H0z"/></clipPath></defs></svg>
+          </div>
         </button>
       </section>
 
@@ -252,7 +254,7 @@
             <li class="transport-company-item">ТоксБерри</li>
           </ul>
 
-          <a class="button button-color about-company-link" href="#">Подробнее о нас</a>
+          <a class="button-bright about-company-button" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -275,7 +277,7 @@
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
 
-          <a class="button button-color contacts-link" href="#">Напишите нам</a>
+          <a class="button-bright contacts-button" href="#">Напишите нам</a>
         </section>
       </div>
 

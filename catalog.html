@@ -14,7 +14,7 @@
         </a>
 
         <nav class="navigation">
-          <div class="navigation-row-top">
+          <div class="navigation-container">
             <h2 class="visually-hidden">Форма поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="search"></label>
@@ -52,7 +52,7 @@
             </ul>
           </div>
 
-          <div class="navigation-row-bottom">
+          <div class="navigation-container">
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <button class="button catalog-navigation-button" href="catalog.html">
               <svg class="catalog-navigation-icon" aria-hidden="true" focusable="false" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".3" cx="25" cy="25.78" r="24" stroke="#000" stroke-width="2"/><g opacity=".3" clip-path="url(#a)"><path d="M33 24.78h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.78)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
@@ -185,7 +185,7 @@
                 </ul>
               </fieldset>
 
-              <button class="button button-color products-filter-button" type="submit">Показать</button>
+              <button class="button-bright products-filter-button" type="submit">Показать</button>
             </form>
           </div>
 
@@ -198,19 +198,21 @@
 
                 <select class="select-control" id="sorting" name="sorting">
                   <option value="popular">Популярные</option>
-                  <option value="cheap">Дешёвые</option>
-                  <option value="expensive">Дорогие</option>
+                  <option value="cheap">По рейтингу</option>
+                  <option value="expensive">По цене</option>
                 </select>
 
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
 
-              <div class="sort-buttons">
+              <div class="sort-buttons-container">
                 <a class="sort-button sort-up" href="#">
                   <span class="visually-hidden">Сортировать по возрастанию</span>
+                  <svg class="sort-button-icon" aria-hidden="true" focusable="false" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg>
                 </a>
                 <a class="sort-button sort-down" href="#">
                   <span class="visually-hidden">Сортировать по убыванию</span>
+                  <svg class="sort-button-icon" aria-hidden="true" focusable="false" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10 .5 0h11" fill="#000"/></svg>
                 </a>
               </div>
             </div>
