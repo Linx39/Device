@@ -106,21 +106,36 @@
               <fieldset class="products-filter-group">
                 <legend class="products-filter-name">Стоимость</legend>
 
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную стоимость</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную стоимость</span>
-                </button>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную стоимость</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную стоимость</span>
+                      </button>
 
-                <label class="products-filter-label">
-                  <input class="products-filter-input" type="number" name="min-price">
-                  от 0
-                </label>
-                <label class="products-filter-label">
-                  <input class="products-filter-input" type="number" name="max-price">
-                  до 5000
-                </label>
+                      <label class="range-label label-min">
+                        от <input class="range-input input-min" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="range-label label-max">
+                        до <input class="range-input input-max" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- <div class="range-scale">
+                    <div class="range-wrapper-inputs" style="left: 0; width: 119px">
+                      <label class="products-filter-label">
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="products-filter-label">
+                        до <input class="range-input" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+                  </div> -->
+                </div>
               </fieldset>
 
               <fieldset class="products-filter-group">
