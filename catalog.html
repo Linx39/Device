@@ -117,24 +117,13 @@
                       </button>
 
                       <label class="range-label label-min">
-                        от <input class="range-input input-min" type="number" value="0" name="min-price">
+                        от <input class="range-input input-min" type="number" value="0" name="min-price" style="width: 10px">
                       </label>
                       <label class="range-label label-max">
-                        до <input class="range-input input-max" type="number" value="5000" name="max-price">
+                        до <input class="range-input input-max" type="number" value="5000" name="max-price" style="width: 37px">
                       </label>
                     </div>
                   </div>
-
-                  <!-- <div class="range-scale">
-                    <div class="range-wrapper-inputs" style="left: 0; width: 119px">
-                      <label class="products-filter-label">
-                        от <input class="range-input" type="number" value="0" name="min-price">
-                      </label>
-                      <label class="products-filter-label">
-                        до <input class="range-input" type="number" value="5000" name="max-price">
-                      </label>
-                    </div>
-                  </div> -->
                 </div>
               </fieldset>
 
@@ -210,13 +199,15 @@
               <h3 class="products-sort-title">Сортировка</h3>
 
               <form class="sorting-type">
-                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <div class="select">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
 
-                <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">Популярные</option>
-                  <option value="cheap">По рейтингу</option>
-                  <option value="expensive">По цене</option>
-                </select>
+                  <select class="select-control" id="sorting" name="sorting">
+                    <option value="popular">Популярные</option>
+                    <option value="cheap">По рейтингу</option>
+                    <option value="expensive">По цене</option>
+                  </select>
+                </div>
 
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
