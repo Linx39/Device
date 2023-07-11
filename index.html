@@ -18,7 +18,9 @@
             <h2 class="visually-hidden">Форма поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="search"></label>
-              <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
+              <span class="input-container">
+                <input class="search-form-input" type="text" name="search" id="search" placeholder="Текст поиска">
+              </span>
               <button class="button search-form-button" type="submit">Найти</button>
             </form>
 
@@ -89,45 +91,48 @@
 
           <div class="navigation-container">
             <h2 class="visually-hidden">Навигация по сайту</h2>
-            <button class="button-big catalog-navigation-button">
-              <svg class="catalog-navigation-icon" aria-hidden="true" focusable="false" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.78" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.78h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.78)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
-              Каталог товаров
-            </button>
 
-            <div class="popover-catalog">
-              <div class="popover-catalog-content">
-                <h3 class="visually-hidden">Меню каталога</h3>
+            <div class="catalog">
+              <button class="button-big catalog-navigation-button">
+                <svg class="catalog-navigation-icon" aria-hidden="true" focusable="false" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.78" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.78h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.78)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                Каталог товаров
+              </button>
 
-                <ul class="catalog-menu-list menu-column-1">
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Виртуальная реальность</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Моноподы для cелфи</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="catalog-menu-list menu-column-1">
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Фитнес-браслеты</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="catalog-menu-list menu-column-1">
-                  <li class="catalog-menu-item">
-                    <a class="button catalog-menu-link">Квадрокоптеры</a>
-                  </li>
-                </ul>
+              <div class="subcatalog">
+                <div class="subcatalog-content">
+                  <h3 class="visually-hidden">Меню каталога</h3>
+
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link subcatalog-link-active">Виртуальная реальность</a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link">Моноподы для cелфи</a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link">Фитнес-браслеты</a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="button subcatalog-link">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <ul class="navigation-site navigation-site-header">
               <li class="navigation-site-item">
-                <a class="button-big navigation-site-link" href="#">Доставка</a>
+                <a class="button-big navigation-site-link navigation-site-link-active" href="#">Доставка</a>
               </li>
               <li class="navigation-site-item">
                 <a class="button-big navigation-site-link" href="#">Гарантия</a>
