@@ -153,7 +153,7 @@
     <main class="main-container main-inner">
       <div class="page-container">
         <header class="main-inner-header">
-          <h1 class="inner-header-title">Моноподы для селфи</h1>
+          <h1 class="inner-header-title title-big">Моноподы для селфи</h1>
 
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -173,12 +173,12 @@
         <h2 class="visually-hidden">Каталог товаров с фильтрами и сортировкой</h2>
 
         <div class="page-container catalog-columns">
-          <div class="products-filter">
-            <h3 class="products-filter-title">Фильтр:</h3>
+          <div class="catalog-filter">
+            <h3 class="catalog-filter-title">Фильтр:</h3>
 
-            <form class="products-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="products-filter-group">
-                <legend class="products-filter-name">Стоимость</legend>
+            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-name">Стоимость</legend>
 
                 <div class="range">
                   <div class="range-scale">
@@ -201,39 +201,39 @@
                 </div>
               </fieldset>
 
-              <fieldset class="products-filter-group">
-                <legend class="products-filter-name">Цвет</legend>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-name">Цвет</legend>
 
-                <ul class="products-filter-list">
-                  <li class="products-filter-item">
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
-                  <li class="products-filter-item">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
-                  <li class="products-filter-item">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="blue">
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
-                  <li class="products-filter-item">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="red">
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
-                  <li class="products-filter-item">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="pink">
                       <span class="control-mark"></span>
@@ -243,18 +243,18 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="products-filter-group">
-                <legend class="products-filter-name">Bluetooth</legend>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-name">Bluetooth</legend>
 
-                <ul class="products-filter-list">
-                  <li class="products-filter-item">
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
-                  <li class="products-filter-item">
+                  <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
                       <span class="control-mark"></span>
@@ -264,13 +264,13 @@
                 </ul>
               </fieldset>
 
-              <button class="button-gradient products-filter-button" type="submit">Показать</button>
+              <button class="button-gradient catalog-filter-button" type="submit">Показать</button>
             </form>
           </div>
 
           <div class="catalog-right-column">
             <div class="sorting-container">
-              <h3 class="products-sort-title">Сортировка</h3>
+              <h3 class="catalog-sort-title">Сортировка</h3>
 
               <form class="sorting-type">
                 <div class="select">
@@ -300,6 +300,7 @@
 
             <div class="products">
               <h3 class="visually-hidden">Список товаров</h3>
+
               <ul class="products-list">
                 <li class="product-card product-new" tabindex="0">
                     <img class="product-card-image" src="img/product/product-1.jpg" width="360" height="380"  alt="">
@@ -342,7 +343,7 @@
 
               <div class="pagination">
                 <a class="button-big pagination-prev" href="#">
-                  <span class="pagination-link-text">Назад</span>
+                  Назад
                 </a>
 
                 <ul class="pagination-list">
@@ -364,7 +365,7 @@
                 </ul>
 
                 <a class="button-big pagination-next" href="#">
-                  <span class="pagination-link-text">Вперёд</span>
+                  Вперёд
                 </a>
               </div>
             </div>
