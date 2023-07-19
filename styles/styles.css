@@ -1142,9 +1142,6 @@ body {
   letter-spacing: -0.02em;
 }
 
-.range {
-  position: relative;/*vgfhghj*/
-}
 .range-scale {
   position: relative;
   height: 2px;
@@ -1214,7 +1211,6 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
-
 }
 
 .range-input::-webkit-outer-spin-button,
