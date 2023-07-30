@@ -40,6 +40,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

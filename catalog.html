@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: проект Девайс</title>
+    <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -10,7 +11,7 @@
     <header class="page-header">
       <div class="header-container">
         <a class="logo-link logo-header" href="index.html">
-          <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс">
+          <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип Магазина Девайс.">
         </a>
 
         <nav class="navigation">
@@ -193,11 +194,13 @@
                     </div>
 
                     <div class="range-label-container" style="left: 0; min-width: 119px">
-                      <label class="range-label label-min" style="margin-right: -20px;">
-                        от <input class="range-input" type="number" value="0" name="min-price" style="width: 37px" disabled>
+                      <!-- width = кол-во символов * 9 + 1 -->
+                      <!-- margin = width / 2 -->
+                      <label class="range-label label-min" style="margin-right: -5px;">
+                        от <input class="range-input" type="number" value="0" name="min-price" style="width: 10px">
                       </label>
                       <label class="range-label label-max" style="margin-left: -20px;">
-                        до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px" disabled>
+                        до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
                       </label>
                     </div>
                   </div>
@@ -379,7 +382,7 @@
 
     <footer class="page-footer  page-container-wide">
       <a class="logo-link logo-footer" href="index.html">
-        <img class="logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс">
+        <img class="logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Магазина Девайс.">
       </a>
 
       <section class="footer-contacts-and-navigation">
